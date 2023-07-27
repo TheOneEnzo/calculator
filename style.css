@@ -37,12 +37,24 @@ body{
 .numbers{
     display: flex;
     flex-direction: column;
-
     flex: 0.7;
+}
+
+.row{
+    display: flex;
+    flex: 1;
+}
+
+.row button{
+    flex: 1;
 }
 
 .operators{
     display: flex;
     flex-direction: column;
     flex: 0.3;
+}
+
+.operators button{
+    flex: 1;
 }
