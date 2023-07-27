@@ -26,7 +26,7 @@ body{
 .screen{
     border: solid black 2px;
     height: 20vh;
-    
+    display: flex;
 }
 
 .bottom{
@@ -57,4 +57,9 @@ body{
 
 .operators button{
     flex: 1;
+}
+
+.displayedNum{
+    font-size: 4rem;
+    font-style: bold;
 }

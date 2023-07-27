@@ -34,3 +34,24 @@ function operate(oper, firstNum, secondNum) {
     
     
 }
+
+let screen = document.querySelector('.screen')
+let displayNum = document.querySelectorAll('.num')
+console.log(displayNum)
+
+let test = document.getElementById('1')
+let span = document.createElement('span')
+console.log(test.innerHTML)
+
+
+
+for (let i = 0; i < displayNum.length; i++) {
+    displayNum[i].addEventListener('click', (e)=> {
+        let content = e.target.innerHTML
+        span.append(content)
+        span.classList.add('displayedNum')
+        console.log(span)
+        screen.append(span)  
+    })
+    
+}
