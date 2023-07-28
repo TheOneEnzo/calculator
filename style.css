@@ -60,6 +60,18 @@ body{
 }
 
 .displayedNum{
-    font-size: 4rem;
-    font-style: bold;
+    font-size: 3.5rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.hidden{
+    font-size: 1rem;
+    
+}
+
+#hidden{
+    display: none;
 }
