@@ -67,14 +67,21 @@ function clear() {
     span.textContent = ''
 }
 
-
+function clearAll(params) {
+    if ((hidden.hasAttribute('id'))) {
+        console.log('hej')
+    }
+    else{
+        hidden.innerHTML = ''
+    }
+}
 
 clearBTN.addEventListener('click', clear)
 
 
 divBTN.addEventListener('click', ()=> {
 
-
+    clearAll()
     
     temp = document.createElement('span')
     temp2 = document.createElement('span')
