@@ -114,3 +114,50 @@ enterBTN.addEventListener('click', ()=>{
 
 })
 
+multBTN.addEventListener('click', ()=>{
+
+    clearAll()
+
+    temp = document.createElement('span')
+    temp2 = document.createElement('span')
+    temp2.append(span.innerHTML)
+    clear()
+    temp2.setAttribute('id', 'firstNumber') 
+    hidden.append(temp2)
+    temp.textContent = '*'
+    temp.setAttribute('id', 'operator')
+    hidden.append(temp)
+    hidden.removeAttribute('id')
+})
+
+subBTN.addEventListener('click', ()=>{
+
+    clearAll()
+
+    temp = document.createElement('span')
+    temp2 = document.createElement('span')
+    temp2.append(span.innerHTML)
+    clear()
+    temp2.setAttribute('id', 'firstNumber') 
+    hidden.append(temp2)
+    temp.textContent = '-'
+    temp.setAttribute('id', 'operator')
+    hidden.append(temp)
+    hidden.removeAttribute('id')
+} )
+
+addBTN.addEventListener('click', ()=>{
+
+    clearAll()
+
+    temp = document.createElement('span')
+    temp2 = document.createElement('span')
+    temp2.append(span.innerHTML)
+    clear()
+    temp2.setAttribute('id', 'firstNumber') 
+    hidden.append(temp2)
+    temp.textContent = '+'
+    temp.setAttribute('id', 'operator')
+    hidden.append(temp)
+    hidden.removeAttribute('id')
+})
