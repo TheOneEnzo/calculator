@@ -69,30 +69,57 @@ function clear() {
 
 function clearAll(params) {
     if ((hidden.hasAttribute('id'))) {
-        console.log('hej')
+        
     }
     else{
         hidden.innerHTML = ''
     }
 }
 
-clearBTN.addEventListener('click', clear)
+
+
+
+clearBTN.addEventListener('click', ()=>{
+    clear()
+    hidden.innerHTML = ''
+})
 
 
 divBTN.addEventListener('click', ()=> {
-
-    clearAll()
     
-    temp = document.createElement('span')
-    temp2 = document.createElement('span')
-    temp2.append(span.innerHTML)
-    clear()
-    temp2.setAttribute('id', 'firstNumber') 
-    hidden.append(temp2)
-    temp.textContent = '/'
-    temp.setAttribute('id', 'operator')
-    hidden.append(temp)
-    hidden.removeAttribute('id')
+    eval1 = document.querySelector('#firstNumber')
+    eval2 = document.querySelector('#operator')
+    let eval3
+
+    if ((eval1 !== null) && (eval2 !== null)) {
+        eval3 = document.querySelector('.displayedNum')
+
+        let r = operate(Number(eval1.innerHTML), eval2.innerHTML, Number(eval3.innerHTML))
+        clearAll()
+        clear()
+        let constemp = document.createElement('span')
+        let constemp2 = document.createElement('span')
+        constemp.append(r)
+        constemp.setAttribute('id', 'firstNumber')
+        constemp2.textContent = '/'
+        constemp2.setAttribute('id', 'operator')
+        hidden.append(constemp)
+        hidden.append(constemp2)
+
+        
+    }else{
+        clearAll()
+        temp = document.createElement('span')
+        temp2 = document.createElement('span')
+        temp2.append(span.innerHTML)
+        clear()
+        temp2.setAttribute('id', 'firstNumber') 
+        hidden.append(temp2)
+        temp.textContent = '/'
+        temp.setAttribute('id', 'operator')
+        hidden.append(temp)
+        hidden.removeAttribute('id')
+    }
 })
 
 
@@ -112,52 +139,126 @@ enterBTN.addEventListener('click', ()=>{
     temp3.setAttribute('id', 'secondNumber')
     hidden.append(temp3)
 
+    
 })
 
 multBTN.addEventListener('click', ()=>{
 
-    clearAll()
 
-    temp = document.createElement('span')
-    temp2 = document.createElement('span')
-    temp2.append(span.innerHTML)
-    clear()
-    temp2.setAttribute('id', 'firstNumber') 
-    hidden.append(temp2)
-    temp.textContent = '*'
-    temp.setAttribute('id', 'operator')
-    hidden.append(temp)
-    hidden.removeAttribute('id')
+    eval1 = document.querySelector('#firstNumber')
+    eval2 = document.querySelector('#operator')
+    let eval3
+
+    if ((eval1 !== null) && (eval2 !== null)) {
+        eval3 = document.querySelector('.displayedNum')
+
+        let r = operate(Number(eval1.innerHTML), eval2.innerHTML, Number(eval3.innerHTML))
+        clearAll()
+        clear()
+        let constemp = document.createElement('span')
+        let constemp2 = document.createElement('span')
+        constemp.append(r)
+        constemp.setAttribute('id', 'firstNumber')
+        constemp2.textContent = '*'
+        constemp2.setAttribute('id', 'operator')
+        hidden.append(constemp)
+        hidden.append(constemp2)
+
+    }else{
+        clearAll()
+
+        temp = document.createElement('span')
+        temp2 = document.createElement('span')
+        temp2.append(span.innerHTML)
+        clear()
+        temp2.setAttribute('id', 'firstNumber') 
+        hidden.append(temp2)
+        temp.textContent = '*'
+        temp.setAttribute('id', 'operator')
+        hidden.append(temp)
+        hidden.removeAttribute('id')
+    }
+
+
+
+
 })
 
 subBTN.addEventListener('click', ()=>{
 
-    clearAll()
 
-    temp = document.createElement('span')
-    temp2 = document.createElement('span')
-    temp2.append(span.innerHTML)
-    clear()
-    temp2.setAttribute('id', 'firstNumber') 
-    hidden.append(temp2)
-    temp.textContent = '-'
-    temp.setAttribute('id', 'operator')
-    hidden.append(temp)
-    hidden.removeAttribute('id')
+
+    eval1 = document.querySelector('#firstNumber')
+    eval2 = document.querySelector('#operator')
+    let eval3
+
+    if ((eval1 !== null) && (eval2 !== null)) {
+        eval3 = document.querySelector('.displayedNum')
+
+        let r = operate(Number(eval1.innerHTML), eval2.innerHTML, Number(eval3.innerHTML))
+        clearAll()
+        clear()
+        let constemp = document.createElement('span')
+        let constemp2 = document.createElement('span')
+        constemp.append(r)
+        constemp.setAttribute('id', 'firstNumber')
+        constemp2.textContent = '-'
+        constemp2.setAttribute('id', 'operator')
+        hidden.append(constemp)
+        hidden.append(constemp2)
+
+    }else{
+        clearAll()
+
+        temp = document.createElement('span')
+        temp2 = document.createElement('span')
+        temp2.append(span.innerHTML)
+        clear()
+        temp2.setAttribute('id', 'firstNumber') 
+        hidden.append(temp2)
+        temp.textContent = '-'
+        temp.setAttribute('id', 'operator')
+        hidden.append(temp)
+        hidden.removeAttribute('id')
+    }
+
 } )
 
 addBTN.addEventListener('click', ()=>{
 
-    clearAll()
 
-    temp = document.createElement('span')
-    temp2 = document.createElement('span')
-    temp2.append(span.innerHTML)
-    clear()
-    temp2.setAttribute('id', 'firstNumber') 
-    hidden.append(temp2)
-    temp.textContent = '+'
-    temp.setAttribute('id', 'operator')
-    hidden.append(temp)
-    hidden.removeAttribute('id')
+
+    eval1 = document.querySelector('#firstNumber')
+    eval2 = document.querySelector('#operator')
+    let eval3
+
+    if ((eval1 !== null) && (eval2 !== null)) {
+        eval3 = document.querySelector('.displayedNum')
+
+        let r = operate(Number(eval1.innerHTML), eval2.innerHTML, Number(eval3.innerHTML))
+        clearAll()
+        clear()
+        let constemp = document.createElement('span')
+        let constemp2 = document.createElement('span')
+        constemp.append(r)
+        constemp.setAttribute('id', 'firstNumber')
+        constemp2.textContent = '+'
+        constemp2.setAttribute('id', 'operator')
+        hidden.append(constemp)
+        hidden.append(constemp2)
+
+    }else{
+        clearAll()
+
+        temp = document.createElement('span')
+        temp2 = document.createElement('span')
+        temp2.append(span.innerHTML)
+        clear()
+        temp2.setAttribute('id', 'firstNumber') 
+        hidden.append(temp2)
+        temp.textContent = '+'
+        temp.setAttribute('id', 'operator')
+        hidden.append(temp)
+        hidden.removeAttribute('id')
+    }
 })
